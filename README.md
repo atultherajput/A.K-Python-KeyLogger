@@ -18,4 +18,4 @@ Create a google form like this:
 And then open source code of your form like this:
 ![Source Code](https://github.com/atultherajput/A.K-Python-KeyLogger/raw/master/images/source_code.jpg)
 
-And from there retrieve form *action value='xxxx'* and *text name='xxxx'* as shown in image. And then paste it under remote() method's *url* and *klog* variables. 
+And from there retrieve from *form action value='xxxx'* and *text name value='xxxx'* as shown in image. And then paste it under remote() method's *url* and *klog* variables. 
