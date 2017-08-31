@@ -12,7 +12,7 @@ Note you can use this [icon](http://www.iconarchive.com/download/i95295/dtafalon
 - [pyHook](https://sourceforge.net/projects/pyhook/files/pyhook/1.5.1/pyHook-1.5.1.win32-py2.7.exe/download)
 - [pythoncom](https://sourceforge.net/projects/pywin32/files/pywin32/Build%20221/pywin32-221.win32-py2.7.exe/download)
 
-Create a google form like this:
+Create a [Google Form](https://docs.google.com/forms/) like this:
 ![Google Forms](https://github.com/atultherajput/A.K-Python-KeyLogger/raw/master/images/form.png)
 
 And then open source code of your form like this:
