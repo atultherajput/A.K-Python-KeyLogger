@@ -6,3 +6,8 @@ Use pyinstaller to convert .py file with dependencies to single .exe file:-
 ```
   
 Note you can use this [icon](http://www.iconarchive.com/download/i95295/dtafalonso/android-l/Chrome.ico).
+
+**Requriment:**
+-[Python 2.7:](http://www.python.org/getit/)
+-[pyHook:](http://sourceforge.net/projects/pyhook/)
+-[pythoncom:](http://sourceforge.net/projects/pywin32/)
